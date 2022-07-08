@@ -1,0 +1,139 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f2632;
+  font-size: 1rem;
+  font-family: "Manrope", sans-serif;
+}
+
+body, h1, p {
+  margin: 0;
+}
+
+button {
+  border: 0;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.advice-card {
+  position: relative;
+  padding-bottom: 2rem;
+  margin: 0 1rem;
+}
+.advice-card .advice-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #323a49;
+  padding: 2.5rem 1.5rem;
+  border-radius: 0.625rem;
+  text-align: center;
+}
+.advice-card .advice-card-content .advice-card-id {
+  color: #52ffa8;
+  font-size: 0.75rem;
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5625rem;
+}
+.advice-card .advice-card-content .advice-card-text {
+  font-size: 1.5rem;
+  color: #cee3e9;
+  margin-bottom: 1.5625rem;
+}
+.advice-card .advice-card-content .pattern {
+  margin-bottom: 1.5625rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.advice-card .advice-card-content .pattern .pattern-desktop {
+  display: none;
+}
+.advice-card .container-dice {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.advice-card .container-dice .dice {
+  width: 4rem;
+  height: 4rem;
+  padding: 1.25rem;
+  background-color: #52ffa8;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.advice-card .container-dice .dice svg {
+  fill: #1f2632;
+}
+
+.attribution {
+  align-self: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #cee3e9;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.5rem;
+  margin-bottom: 4px;
+}
+.attribution a {
+  color: #52ffa8;
+}
+
+@media screen and (min-width: 640px) {
+  .advice-card {
+    max-width: 540px;
+    border-radius: 0.9375rem;
+  }
+  .advice-card .advice-card-content {
+    padding: 3.125rem;
+  }
+  .advice-card .advice-card-content .advice-card-id {
+    font-size: 1rem;
+  }
+  .advice-card .advice-card-content .advice-card-text {
+    font-size: 1.75rem;
+  }
+  .advice-card .advice-card-content .pattern .pattern-mobile {
+    display: none;
+  }
+  .advice-card .advice-card-content .pattern .pattern-desktop {
+    display: block;
+  }
+}
+@media (pointer: coarse) {
+  .dice:active {
+    box-shadow: 0px 0px 2rem 2px #52ffa8;
+  }
+
+  .dice:focus {
+    outline: none;
+  }
+}
+@media (pointer: fine) {
+  .dice:hover {
+    box-shadow: 0px 0px 2rem 2px #52ffa8;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Front End Mentor](https://www.frontendmentor.io/solutions/advice-generator-app-using-sass-060ZbZcPqh)
-- Live Site URL: [Vercel](https://fem-advice-generator-app-drab.vercel.app/)
+- Solution URL: [Front End Mentor](https://www.frontendmentor.io/solutions/advice-generator-app-using-sass-_6xAHRAe11)
+- Live Site URL: [Vercel](https://fem-advice-generator-app-elbhiruni.vercel.app/)
 
 ## My process
 
